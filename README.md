@@ -78,4 +78,3 @@ So, for each AWS Account, we have **4 VPC CIDR Ranges** in each of the **4 Regio
 ![Diagram showing ip-plan-2.png](ip-plan/ip-plan-2.png)
 ![Diagram showing ip-plan-3.png](ip-plan/ip-plan-3.png)
 ![Diagram showing ip-plan-4.png](ip-plan/ip-plan-4.png)
- 
