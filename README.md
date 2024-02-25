@@ -46,7 +46,7 @@ So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller
 <br/>
 
 ### Network Segments per AWS Account 
-Most organizations have multiple AWS Accounts for Security reasons. Based on this, let's have 4 AWS Accounts, i.e Dev, QA, Prod and 1 extra to serve as a buffer. <br/> So, let's break down the Network Segments further for each AWS Account. When we further segment the Network Ranges per Region above, for each AWS Account, we have <br/>
+Most organizations have multiple AWS Accounts for Security reasons. Based on this, let's have 4 AWS Accounts, i.e Dev, QA, Prod and 1 extra to serve as a buffer. <br/> So, let's break down the Network Segments further for each AWS Account. When we further segment the Network Ranges per Region above, for each AWS Account, we have <br/><br/>
     - **10.24 to 10.39 for Canada Region becomes:** <br/>
         - 10.24 to 10.27 for Account 1 (DEV ACC) <br/>
         - 10.28 to 10.31 for Account 2 (QA ACC) <br/>
@@ -57,7 +57,7 @@ Most organizations have multiple AWS Accounts for Security reasons. Based on thi
         - 10.44 to 10.47 for Account 2 (QA ACC) <br/>
         - 10.48 to 10.51 for Account 3 (PROD ACC) <br/>
         - 10.52 to 10.55 for Account 4 (RESERVED) <br/><br/>
-    - **10.56 to 10.71 for U.S region 1 beocmes:** <br/>
+    - **10.56 to 10.71 for U.S region 1 becomes:** <br/>
         - 10.56 to 10.59 for Account 1 (DEV ACC) <br/>
         - 10.60 to 10.63 for Account 2 (QA ACC) <br/>
         - 10.64 to 10.67 for Account 3 (PROD ACC) <br/>
