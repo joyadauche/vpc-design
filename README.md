@@ -2,7 +2,7 @@
 This is an attempt to design a VPC (Virtual Private Cloud) in AWS for a fictional startup 
 
 # Scenario
-A fictional startup, xyz, that operates in Canada and Europe needs an IP Plan design to launch a set of services in AWS. The startup also plans to interact with a vendor's services which are in a Network Range of **10.127.0.0/9** which starts at **10.127.0.0** and ends at **10.127.255.255**
+A fictional startup, xyz, that operates in Canada and Europe needs an IP Plan design to launch a set of services in AWS. The startup also plans to interact with a vendor's services which are in a Network Range of **10.127.0.0/9** which starts at **10.127.0.0** and ends at **10.255.255.255**
 
 <hr/>
 
