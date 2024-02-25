@@ -34,11 +34,11 @@ Based on [AWS VPC Sizing](https://d0.awsstatic.com/aws-answers/AWS_Single_VPC_De
 <br/>
 
 ### Network Segments per Regions
-From th Scenario above, the business operates in 2 regions, i.e Canada and Europe. Let's add 2 regions in the U.S, as a buffer for growth, which makes it **4 regions**. So, we have <br/>
+From th Scenario above, the business operates in 2 regions, i.e Canada and Europe. Let's add 2 regions in the U.S, as a buffer for growth, which makes it **4 regions**. So, we have <br/><br/>
     - **1** region in Canada <br/>
     - **1** region in Europe <br/>
     - **2** regions in U.S <br/> <br/>
-So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller Networks for each Region, we will have the below: <br/ ><br/>
+So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller Networks for each Region, we will have the below: <br/><br/>
      - 10.24 to 10.39 for Canada <br/>
      - 10.40 to 10.55 for Europe <br/>
      - 10.56 to 10.71 for U.S region 1 <br/>
@@ -47,22 +47,22 @@ So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller
 
 ### Network Segments per AWS Account 
 Most organizations have multiple AWS Accounts for Security reasons. Based on this, let's have 4 AWS Accounts, i.e Dev, QA, Prod and 1 extra to serve as a buffer. <br/> So, let's break down the Network Segments further for each AWS Account. When we further segment the Network Ranges per Region above, for each AWS Account, we have <br/>
-    - 10.24 to 10.39 for Canada Region becomes: <br/>
+    - **10.24 to 10.39 for Canada Region becomes:** <br/>
         - 10.24 to 10.27 for Account 1 (DEV ACC) <br/>
         - 10.28 to 10.31 for Account 2 (QA ACC) <br/>
         - 10.32 to 10.35 for Account 3 (PROD ACC) <br/>
         - 10.36 to 10.39 for Account 4 (RESERVED) <br/><br/>
-    - 10.40 to 10.55 for Europe Region becomes: <br/>
+    - **10.40 to 10.55 for Europe Region becomes:** <br/>
         - 10.40 to 10.43 for Account 1 (DEV ACC) <br/>
         - 10.44 to 10.47 for Account 2 (QA ACC) <br/>
         - 10.48 to 10.51 for Account 3 (PROD ACC) <br/>
         - 10.52 to 10.55 for Account 4 (RESERVED) <br/><br/>
-    - 10.56 to 10.71 for U.S region 1 beocmes: <br/>
+    - **10.56 to 10.71 for U.S region 1 beocmes:** <br/>
         - 10.56 to 10.59 for Account 1 (DEV ACC) <br/>
         - 10.60 to 10.63 for Account 2 (QA ACC) <br/>
         - 10.64 to 10.67 for Account 3 (PROD ACC) <br/>
         - 10.68 to 10.71 for Account 4 (RESERVED) <br/><br/>
-    - 10.72 to 10.87 for U.S region 2 becomes: <br/>
+    - **10.72 to 10.87 for U.S region 2 becomes:** <br/>
         - 10.72 to 10.75 for Account 1 (DEV ACC) <br/>
         - 10.76 to 10.79 for Account 2 (QA ACC) <br/>
         - 10.80 to 10.83 for Account 3 (PROD ACC) <br/>
