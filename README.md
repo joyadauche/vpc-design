@@ -56,13 +56,13 @@ Most organizations have multiple AWS Accounts for Security reasons. Based on thi
         - 10.40 to 10.43 for Account 1 (DEV ACC) <br/>
         - 10.44 to 10.47 for Account 2 (QA ACC) <br/>
         - 10.48 to 10.51 for Account 3 (PROD ACC) <br/>
-        - 10.52 to 10.55 for Account 4 (RESERVED) <br/>
-    - 10.56 to 10.71 for U.S region 1 beocmes: <br/><br/>
+        - 10.52 to 10.55 for Account 4 (RESERVED) <br/><br/>
+    - 10.56 to 10.71 for U.S region 1 beocmes: <br/>
         - 10.56 to 10.59 for Account 1 (DEV ACC) <br/>
         - 10.60 to 10.63 for Account 2 (QA ACC) <br/>
         - 10.64 to 10.67 for Account 3 (PROD ACC) <br/>
-        - 10.68 to 10.71 for Account 4 (RESERVED) <br/>
-    - 10.72 to 10.87 for U.S region 2 becomes: <br/><br/>
+        - 10.68 to 10.71 for Account 4 (RESERVED) <br/><br/>
+    - 10.72 to 10.87 for U.S region 2 becomes: <br/>
         - 10.72 to 10.75 for Account 1 (DEV ACC) <br/>
         - 10.76 to 10.79 for Account 2 (QA ACC) <br/>
         - 10.80 to 10.83 for Account 3 (PROD ACC) <br/>
