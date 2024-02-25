@@ -22,7 +22,7 @@ Services like web servers, api servers, etc are launced into a VPC - A Service i
 
 ### The Number of AZs the VPC will use
 Let's start with 3 Avalaibity Zones and add a buffer to make it 4 i.e AZ-A, AZ-B, AZ-C and AZ-D. Keep in mind that the number of AZs in each Region varies and the typical number of AZs in a Region is 3. So, we would need to split the VPC into *4 smaller Networks (subnets)*. <br/>
-There is also a concept of Tiers within a VPC. An application can be logically divided in to Tiers like web tier, application tier, database tier, etc. A Service will belong to a Tier, each Tier will be in its own Subnet in each AZ. So, a Service will be in deployed in a Tier across Multiple AZs to achieve High Availability. 
+There is also a concept of **Tiers** within a VPC. An application can be logically divided in to Tiers like web tier, application tier, database tier, etc. A Service will belong to a Tier, each Tier will be in its own **Subnet** in each AZ. So, a Service will be in deployed in a Tier, within a Subnet, across Multiple AZs to achieve High Availability. 
 <br/>
 
 ### The Number of Tiers in a VPC
@@ -34,11 +34,11 @@ Based on [AWS VPC Sizing](https://d0.awsstatic.com/aws-answers/AWS_Single_VPC_De
 <br/>
 
 ### Network Segments per Regions
-From th Scenario above, the business operates in 2 regions, i.e Canada and Europe. Let's add 2 regions in the U.S, as a buffer for growth, which makes it **4 regions**. So, we have
+From th Scenario above, the business operates in 2 regions, i.e Canada and Europe. Let's add 2 regions in the U.S, as a buffer for growth, which makes it **4 regions**. So, we have <br/>
     - **1** region in Canada
     - **1** region in Europe
     - **2** regions in U.S <br/>
-So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller Networks for each Region, we will have the below:
+So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller Networks for each Region, we will have the below: <br/>
      - 10.24 to 10.39 for Canada
      - 10.40 to 10.55 for Europe
      - 10.56 to 10.71 for U.S region 1
@@ -46,22 +46,22 @@ So, if we start at **10.24**, and begin to create Network Segments of 16 Smaller
 <br/>
 
 ### Network Segments per AWS Account 
-Most organizations have multiple AWS Accounts for Security reasons. Based on this, let's have 4 AWS Accounts, i.e Dev, QA, Prod and 1 extra to serve as a buffer. <br/> So, let's break down the Network Segments further for each AWS Account. When we further segment the Network Ranges per Region above, for each AWS Account, we have
+Most organizations have multiple AWS Accounts for Security reasons. Based on this, let's have 4 AWS Accounts, i.e Dev, QA, Prod and 1 extra to serve as a buffer. <br/> So, let's break down the Network Segments further for each AWS Account. When we further segment the Network Ranges per Region above, for each AWS Account, we have <br/>
     - 10.24 to 10.39 for Canada Region becomes:
         - 10.24 to 10.27 for Account 1 (DEV ACC)
         - 10.28 to 10.31 for Account 2 (QA ACC)
         - 10.32 to 10.35 for Account 3 (PROD ACC)
-        - 10.36 to 10.39 for Account 4 (RESERVED)
+        - 10.36 to 10.39 for Account 4 (RESERVED) <br/>
     - 10.40 to 10.55 for Europe Region becomes:
         - 10.40 to 10.43 for Account 1 (DEV ACC)
         - 10.44 to 10.47 for Account 2 (QA ACC)
         - 10.48 to 10.51 for Account 3 (PROD ACC)
-        - 10.52 to 10.55 for Account 4 (RESERVED)
+        - 10.52 to 10.55 for Account 4 (RESERVED) <br/>
     - 10.56 to 10.71 for U.S region 1 beocmes:
         - 10.56 to 10.59 for Account 1 (DEV ACC)
         - 10.60 to 10.63 for Account 2 (QA ACC)
         - 10.64 to 10.67 for Account 3 (PROD ACC)
-        - 10.68 to 10.71 for Account 4 (RESERVED)
+        - 10.68 to 10.71 for Account 4 (RESERVED) <br/>
     - 10.72 to 10.87 for U.S region 2 becomes:
         - 10.72 to 10.75 for Account 1 (DEV ACC)
         - 10.76 to 10.79 for Account 2 (QA ACC)
